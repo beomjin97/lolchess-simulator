@@ -1,11 +1,7 @@
 import React from "react";
 import styles from "./ChampionBox.module.scss";
-import { atom, useRecoilState } from "recoil";
-
-const activatedState = atom({
-  key: "actvatedState", // unique ID (with respect to other atoms/selectors)
-  default: false, // default value (aka initial value)
-});
+import { useRecoilState } from "recoil";
+import activatedState from "../../store/store";
 
 interface propsType {
   name: string;
@@ -24,7 +20,7 @@ export default function ChampionBox({ name, url, cost }: propsType) {
     <div className={`${styles["combined"]} ${styles[`combined${cost}`]}`}>
       <div
         className={`${styles["box"]} ${activated && styles["active"]}`}
-        onClickCapture={handleClick}
+        onClick={handleClick}
       >
         <img src={url} alt={name} className={styles["img"]} />
         <span className={`${styles["cost"]} ${styles[`cost${cost}`]} `}>
