@@ -1,14 +1,14 @@
 .wrapper {
-  border: 3px solid red;
+  display: inline-block;
+  border: 2px solid grey;
   font-size: 13px;
   color: #fff;
   font-family: "맑은 고딕" sans-serif;
-  margin: 12px;
+  margin: 16px;
 }
 
-.champwrapper {
-  display: flex;
-}
+// .champwrapper {
+// }
 
 .icon {
   width: 20px;

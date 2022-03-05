@@ -18,7 +18,7 @@ const synergy_svg_url = {
     "https://lolchess.gg/images/tft/traiticons-darken/6.5/Mercenary.svg",
   Enforcer: "https://lolchess.gg/images/tft/traiticons-darken/6.5/Enforcer.svg",
   Chemtech: "https://lolchess.gg/images/tft/traiticons-darken/6.5/Chemtech.svg",
-  Matermind:
+  Mastermind:
     "https://lolchess.gg/images/tft/traiticons-darken/6.5/Mastermind.svg",
   Enchanter:
     "https://lolchess.gg/images/tft/traiticons-darken/6.5/Enchanter.svg",
