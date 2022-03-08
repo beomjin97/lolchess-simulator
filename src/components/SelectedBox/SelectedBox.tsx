@@ -1,26 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import ChampionBox from "../ChampionBox/ChampionBox";
 import styles from "./SelectedBox.module.scss";
-import { selector } from "recoil";
+import activeState from "../../store/store";
+import { useRecoilValue } from "recoil";
+import championImgUrl from "../../imgUrl/champion_img_url";
 
 export default function SelectedBox() {
-  const [selected, setSelected] = useState(false);
-
-  function handleClick(): void {
-    setSelected((prev) => !prev);
-  }
+  const globalActive = useRecoilValue(activeState);
 
   return (
     <>
-      <button onClick={handleClick}>클릭</button>
+      {/* <button onClick={handleClick}>클릭</button> */}
       <div className={styles["wrapper"]}>
-        {selected && (
+        {globalActive.map((item) => (
           <ChampionBox
-            name="kaisa"
-            cost={5}
-            url="https://ddragon.poro.gg/12.3.1/img/champion/Kaisa.png"
+            name={item}
+            cost={1}
+            url={championImgUrl[item]}
+            key={item}
           />
-        )}
+        ))}
       </div>
     </>
   );

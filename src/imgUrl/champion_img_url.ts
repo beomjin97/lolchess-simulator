@@ -1,4 +1,6 @@
-const championImgUrl = {
+// 타입 지정 모르겟음 ㅠ
+
+const championImgUrl: any = {
   Galio: "https://cdn.lolchess.gg/upload/images/champions/Galio_1634784242.png",
   Gangplank: "https://ddragon.poro.gg/12.3.1/img/champion/Gangplank.png",
   Gnar: "https://cdn.lolchess.gg/upload/images/champions/Gnar_1643374869.png",

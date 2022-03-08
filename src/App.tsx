@@ -14,7 +14,7 @@ function App() {
   return (
     <RecoilRoot>
       <div className={styles["App"]}>
-        <SelectedBox />
+        <SelectedBox></SelectedBox>
 
         {/* 경쟁자 */}
         <SynergyBox name="경쟁자" enName="Rival" url={synergy_svg_url.Rival}>
