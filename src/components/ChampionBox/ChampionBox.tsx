@@ -1,17 +1,19 @@
 import React from "react";
 import styles from "./ChampionBox.module.scss";
-import { useRecoilState } from "recoil";
-import activeState from "../../store/store";
+import { useRecoilState, useSetRecoilState } from "recoil";
+import { activeState, activeSynergyState } from "../../store/store";
 
 interface propsType {
   name: string;
   url: string;
   cost: number;
+  synergy?: string; // 모든 box에 props로 지정되면 ? 제거
 }
 
-export default function ChampionBox({ name, url, cost }: propsType) {
+export default function ChampionBox({ name, url, cost, synergy }: propsType) {
   // const [active, setActive] = useState("");
   const [globalActive, setGlobalActive] = useRecoilState(activeState);
+  const setGlobalSynergyState = useSetRecoilState(activeSynergyState);
 
   function handleClick(e: any): void {
     if (globalActive.includes(e.target.alt)) {
@@ -19,6 +21,7 @@ export default function ChampionBox({ name, url, cost }: propsType) {
     } else {
       setGlobalActive((prev) => [...prev, e.target.alt]);
       // alert(globalActive);
+      setGlobalSynergyState((prev) => [...prev, synergy]);
     }
   }
 

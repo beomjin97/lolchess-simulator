@@ -18,7 +18,12 @@ function App() {
 
         {/* 경쟁자 */}
         <SynergyBox name="경쟁자" enName="Rival" url={synergy_svg_url.Rival}>
-          <ChampionBox name="Vi" cost={4} url={championImgUrl.Vi} />
+          <ChampionBox
+            name="Vi"
+            cost={4}
+            url={championImgUrl.Vi}
+            synergy="경쟁자"
+          />
           <ChampionBox name="Jinx" cost={5} url={championImgUrl.Jinx} />
         </SynergyBox>
 

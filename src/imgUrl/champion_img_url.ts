@@ -1,4 +1,4 @@
-// 타입 지정 모르겟음 ㅠ
+// 타입 지정
 
 const championImgUrl: any = {
   Galio: "https://cdn.lolchess.gg/upload/images/champions/Galio_1634784242.png",
