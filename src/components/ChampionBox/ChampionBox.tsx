@@ -7,7 +7,7 @@ interface propsType {
   name: string;
   url: string;
   cost: number;
-  synergy?: string; // 모든 box에 props로 지정되면 ? 제거
+  synergy: string[];
 }
 
 export default function ChampionBox({ name, url, cost, synergy }: propsType) {
@@ -15,13 +15,13 @@ export default function ChampionBox({ name, url, cost, synergy }: propsType) {
   const [globalActive, setGlobalActive] = useRecoilState(activeState);
   const setGlobalSynergyState = useSetRecoilState(activeSynergyState);
 
-  function handleClick(e: any): void {
-    if (globalActive.includes(e.target.alt)) {
-      setGlobalActive((prev) => prev.filter((item) => item !== e.target.alt));
+  function handleClick(): void {
+    if (globalActive.includes(name)) {
+      setGlobalActive((prev) => prev.filter((item) => item !== name));
     } else {
-      setGlobalActive((prev) => [...prev, e.target.alt]);
+      setGlobalActive((prev) => [...prev, name]);
       // alert(globalActive);
-      setGlobalSynergyState((prev) => [...prev, synergy]);
+      setGlobalSynergyState((prev: string[]) => [...prev, ...synergy].sort());
     }
   }
 

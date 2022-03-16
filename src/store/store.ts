@@ -5,8 +5,7 @@ export const activeState = atom<string[]>({
   default: [], // default value (aka initial value)
 });
 
-export const activeSynergyState = atom<any[]>({
-  // any 수정 필요
+export const activeSynergyState = atom<string[]>({
   key: "activeSynergyState",
   default: [],
 });
