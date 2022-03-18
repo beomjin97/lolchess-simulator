@@ -1,4 +1,4 @@
-const synergy_svg_url = {
+const synergy_svg_url: any = {
   Rival: "https://lolchess.gg/images/tft/traiticons-darken/6.5/Rival.svg",
   Scrap: "https://lolchess.gg/images/tft/traiticons-darken/6.5/Scrap.svg",
   Glutton: "https://lolchess.gg/images/tft/traiticons-darken/6.5/Glutton.svg",

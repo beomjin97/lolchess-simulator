@@ -113,7 +113,7 @@ function App() {
             name="Chogath"
             cost={3}
             url={championImgUrl.Chogath}
-            synergy={championSynergy.CHogath}
+            synergy={championSynergy.Chogath}
           />
           <ChampionBox
             name="Khazix"
@@ -794,7 +794,7 @@ function App() {
             name="Jinx"
             cost={5}
             url={championImgUrl.Jinx}
-            synergy={championSynergy.jinx}
+            synergy={championSynergy.Jinx}
           />
         </SynergyBox>
         {/* 암살자 */}

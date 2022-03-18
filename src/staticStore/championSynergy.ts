@@ -1,6 +1,10 @@
 // 타입 지정
 
-const championSynergy: any = {
+export interface CStypes {
+  [x: string]: string[];
+}
+
+const championSynergy: CStypes = {
   Galio: ["거신", "사교계", "경호대"],
   Gangplank: ["용병", "쌍발총"],
   Gnar: ["사교계", "요들", "타격대"],

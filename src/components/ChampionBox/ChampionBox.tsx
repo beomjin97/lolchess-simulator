@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./ChampionBox.module.scss";
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import { activeState, activeSynergyState } from "../../store/store";
 
 interface propsType {
@@ -13,11 +13,22 @@ interface propsType {
 export default function ChampionBox({ name, url, cost, synergy }: propsType) {
   // const [active, setActive] = useState("");
   const [globalActive, setGlobalActive] = useRecoilState(activeState);
-  const setGlobalSynergyState = useSetRecoilState(activeSynergyState);
+  const [globalSynergyState, setGlobalSynergyState] =
+    useRecoilState(activeSynergyState);
+
+  function removeSynergy(prev: string[]) {
+    for (let i = 0; synergy[i] !== undefined; i++) {
+      const included = prev.indexOf(synergy[i]);
+      prev.splice(included, 1);
+    }
+    return prev;
+  }
+  const returnArr = [...globalSynergyState];
 
   function handleClick(): void {
     if (globalActive.includes(name)) {
       setGlobalActive((prev) => prev.filter((item) => item !== name));
+      setGlobalSynergyState(removeSynergy(returnArr));
     } else {
       setGlobalActive((prev) => [...prev, name]);
       // alert(globalActive);

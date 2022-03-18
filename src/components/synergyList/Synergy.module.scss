@@ -1,0 +1,46 @@
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 180px;
+  border: 1px solid red;
+  padding: 8px;
+  margin: 8px;
+  .icon {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    border: 1px solid red;
+  }
+  .count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 32px;
+    width: 16px;
+    border: 1px solid red;
+    border-radius: 6px;
+    margin: 8px;
+  }
+}
+
+.grey {
+  background-image: url("https://cdn.lolchess.gg/images/tft/traits/background/darken.svg");
+}
+.bronze {
+  background-image: url("https://cdn.lolchess.gg/images/tft/traits/background/bronze.svg");
+}
+.silver {
+  background-image: url("https://cdn.lolchess.gg/images/tft/traits/background/silver.svg");
+}
+.gold {
+  background-image: url("https://cdn.lolchess.gg/images/tft/traits/background/gold.svg");
+}
+.platinum {
+  background-image: url("https://cdn.lolchess.gg/images/tft/traits/background/chromatic.svg");
+}
