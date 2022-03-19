@@ -22,89 +22,230 @@ export default function Synergy({ name, count }: propsType) {
         color = "bronze";
       }
       break;
-    // case "대식가":
-    //   color = count;
-    //   break;
-    // case "돌연변이":
-    //   color = count;
-    //   break;
-    // case "마법공학":
-    //   color = count;
-    //   break;
-    // case "범죄조직":
-    //   color = count;
-    //   break;
-    // case "사교계":
-    //   color = count;
-    //   break;
-    // case "시계태엽":
-    //   color = count;
-    //   break;
-    // case "연미복":
-    //   color = count;
-    //   break;
-    // case "요들":
-    //   color = count;
-    //   break;
-    // case "요들군주":
-    //   color = count;
-    //   break;
-    // case "용병":
-    //   color = count;
-    //   break;
-    // case "집행자":
-    //   color = count;
-    //   break;
-    // case "화학공학":
-    //   color = count;
-    //   break;
-    // case "흑막":
-    //   color = count;
-    //   break;
-    // case "강화술사":
-    //   color = count;
-    //   break;
-    // case "거신":
-    //   color = count;
-    //   break;
-    // case "경호대":
-    //   color = count;
-    //   break;
-    // case "난동꾼":
-    //   color = count;
-    //   break;
-    // case "도전자":
-    //   color = count;
-    //   break;
-    // case "변형술사":
-    //   color = count;
-    //   break;
-    // case "비전마법사":
-    //   color = count;
-    //   break;
-    // case "쌍발총":
-    //   color = count;
-    //   break;
-    // case "암살자":
-    //   color = count;
-    //   break;
-    // case "저격수":
-    //   color = count;
-    //   break;
-    // case "타격대":
-    //   color = count;
-    //   break;
-    // case "학자":
-    //   color = count;
-    //   break;
-    // case "혁신가":
-    //   color = count;
-    //  break;
+    case "Glutton":
+      color = count === 1 ? "gold" : "grey";
+      break;
+    case "Mutant":
+      if (count === 7) {
+        color = "platinum";
+      } else if (count >= 5) {
+        color = "gold";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
+    case "Hextech":
+      if (count === 8) {
+        color = "platinum";
+      } else if (count >= 6) {
+        color = "gold";
+      } else if (count >= 4) {
+        color = "silver";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Syndicate":
+      if (count === 7) {
+        color = "platinum";
+      } else if (count >= 5) {
+        color = "gold";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
+    case "Socialite":
+      if (count === 5) {
+        color = "platinum";
+      } else if (count >= 3) {
+        color = "gold";
+      } else if (count === 2) {
+        color = "silver";
+      } else if (count === 1) {
+        color = "bronze";
+      }
+      break;
+    case "Clockwork":
+      if (count === 6) {
+        color = "platinum";
+      } else if (count >= 4) {
+        color = "gold";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Debonair":
+      if (count === 7) {
+        color = "platinum";
+      } else if (count >= 5) {
+        color = "gold";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
+    case "Yordle":
+      if (count === 6) {
+        color = "gold";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
+    case "Yordlelord":
+      color = count === 1 ? "gold" : "grey";
+      break;
+    case "Mercenary":
+      if (count === 7) {
+        color = "platinum";
+      } else if (count >= 5) {
+        color = "gold";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
+    case "Enforcer":
+      if (count === 4) {
+        color = "gold";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Chemtech":
+      if (count === 9) {
+        color = "platinum";
+      } else if (count >= 7) {
+        color = "gold";
+      } else if (count >= 5) {
+        color = "silver";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
+    case "Mastermind":
+      color = count === 1 ? "gold" : "grey";
+      break;
+    case "Enchanter":
+      if (count === 5) {
+        color = "platinum";
+      } else if (count === 4) {
+        color = "gold";
+      } else if (count === 3) {
+        color = "silver";
+      } else if (count === 2) {
+        color = "bronze";
+      }
+      break;
+    case "Colossus":
+      color = count === 2 ? "gold" : "grey";
+      break;
+    case "Bodyguard":
+      if (count === 8) {
+        color = "platinum";
+      } else if (count >= 6) {
+        color = "gold";
+      } else if (count >= 4) {
+        color = "silver";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Bruiser":
+      if (count === 8) {
+        color = "platinum";
+      } else if (count >= 6) {
+        color = "gold";
+      } else if (count >= 4) {
+        color = "silver";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Challenger":
+      if (count === 8) {
+        color = "platinum";
+      } else if (count >= 6) {
+        color = "gold";
+      } else if (count >= 4) {
+        color = "silver";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Transformer":
+      color = count === 1 ? "gold" : "grey";
+      break;
+    case "Arcanist":
+      if (count === 8) {
+        color = "platinum";
+      } else if (count >= 6) {
+        color = "gold";
+      } else if (count >= 4) {
+        color = "silver";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Twinshot":
+      if (count === 5) {
+        color = "platinum";
+      } else if (count === 4) {
+        color = "gold";
+      } else if (count === 3) {
+        color = "silver";
+      } else if (count === 2) {
+        color = "bronze";
+      }
+      break;
+    case "Assassin":
+      if (count === 6) {
+        color = "platinum";
+      } else if (count >= 4) {
+        color = "gold";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Sniper":
+      if (count === 6) {
+        color = "platinum";
+      } else if (count >= 4) {
+        color = "gold";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Striker":
+      if (count === 6) {
+        color = "platinum";
+      } else if (count >= 4) {
+        color = "gold";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Scholar":
+      if (count === 6) {
+        color = "platinum";
+      } else if (count >= 4) {
+        color = "gold";
+      } else if (count >= 2) {
+        color = "bronze";
+      }
+      break;
+    case "Innovator":
+      if (count === 7) {
+        color = "platinum";
+      } else if (count >= 5) {
+        color = "gold";
+      } else if (count >= 3) {
+        color = "bronze";
+      }
+      break;
     default:
       console.log("invalid value");
   }
+
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${count || styles.none}`}>
       <div className={`${styles.icon} ${styles[color]}`}>
         <img src={synergy_img_svg[name]} alt={name} width="16px" />
       </div>

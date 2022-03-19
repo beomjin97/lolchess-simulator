@@ -567,7 +567,7 @@ function App() {
         <SynergyBox
           name="경호대"
           enName="Bodyguard"
-          url={synergy_svg_url.BodyGuard}
+          url={synergy_svg_url.Bodyguard}
         >
           <ChampionBox
             name="Darius"

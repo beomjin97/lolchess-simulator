@@ -17,11 +17,11 @@ export default function SynergyList() {
     Mutant: 0,
     Hextech: 0,
     Syndicate: 0,
-    Soicallite: 0,
+    Socialite: 0,
     Clockwork: 0,
     Debonair: 0,
     Yordle: 0,
-    YordleLoad: 0,
+    Yordlelord: 0,
     Mercenary: 0,
     Enforcer: 0,
     Chemtech: 0,
@@ -30,7 +30,7 @@ export default function SynergyList() {
     Colossus: 0,
     Bodyguard: 0,
     Bruiser: 0,
-    Chanllenger: 0,
+    Challenger: 0,
     Transformer: 0,
     Arcanist: 0,
     Twinshot: 0,
@@ -41,18 +41,18 @@ export default function SynergyList() {
     Innovator: 0,
   };
 
-  const synergyArr = [
+  const synergyArr: string[] = [
     "Rival",
     "Scrap",
     "Glutton",
     "Mutant",
     "Hextech",
     "Syndicate",
-    "Soicallite",
+    "Socialite",
     "Clockwork",
     "Debonair",
     "Yordle",
-    "YordleLoad",
+    "Yordlelord",
     "Mercenary",
     "Enforcer",
     "Chemtech",
@@ -61,7 +61,7 @@ export default function SynergyList() {
     "Colossus",
     "Bodyguard",
     "Bruiser",
-    "Chanllenger",
+    "Challenger",
     "Transformer",
     "Arcanist",
     "Twinshot",
@@ -93,7 +93,7 @@ export default function SynergyList() {
         synergy.Syndicate += 1;
         break;
       case "사교계":
-        synergy.Soicallite += 1;
+        synergy.Socialite += 1;
         break;
       case "시계태엽":
         synergy.Clockwork += 1;
@@ -105,7 +105,7 @@ export default function SynergyList() {
         synergy.Yordle += 1;
         break;
       case "요들군주":
-        synergy.YordleLoad += 1;
+        synergy.Yordlelord += 1;
         break;
       case "용병":
         synergy.Mercenary += 1;
@@ -132,7 +132,7 @@ export default function SynergyList() {
         synergy.Bruiser += 1;
         break;
       case "도전자":
-        synergy.Chanllenger += 1;
+        synergy.Challenger += 1;
         break;
       case "변형술사":
         synergy.Transformer += 1;
@@ -166,13 +166,8 @@ export default function SynergyList() {
 
   return (
     <div className={styles.wrapper}>
-      {/* {synergyArr.map((unit) => {
+      {synergyArr.map((unit) => {
         return <Synergy name={unit} count={synergy[unit]} key={unit} />;
-      })} */}
-      <Synergy name="Rival" count={synergy.Rival} />
-      <Synergy name="Scrap" count={synergy.Scrap} />
-      {GlobalSynergyState.map((unit) => {
-        return ` ${unit},`;
       })}
     </div>
   );

@@ -14,18 +14,26 @@
     justify-content: center;
     height: 32px;
     width: 32px;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
   .count {
+    color: #fff;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     height: 32px;
     width: 16px;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 6px;
     margin: 8px;
+  }
+  .right {
+    .name {
+      color: #fff;
+      font-size: 20px;
+    }
   }
 }
 
@@ -43,4 +51,8 @@
 }
 .platinum {
   background-image: url("https://cdn.lolchess.gg/images/tft/traits/background/chromatic.svg");
+}
+
+.none {
+  display: none;
 }

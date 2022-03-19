@@ -1,3 +1,7 @@
+interface sivType {
+  [x: string]: string;
+}
+
 const synergy_img_svg: any = {
   Rival: "https://lolchess.gg/images/tft/traiticons-black/6.5/Rival.svg",
   Scrap: "https://lolchess.gg/images/tft/traiticons-black/6.5/Scrap.svg",
@@ -12,8 +16,8 @@ const synergy_img_svg: any = {
     "https://lolchess.gg/images/tft/traiticons-black/6.5/Clockwork.svg",
   Debonair: "https://lolchess.gg/images/tft/traiticons-black/6.5/Debonair.svg",
   Yordle: "https://lolchess.gg/images/tft/traiticons-black/6.5/Yordle.svg",
-  YordleLord:
-    "https://lolchess.gg/images/tft/traiticons-black/6.5/YordleLord.svg",
+  Yordlelord:
+    "https://lolchess.gg/images/tft/traiticons-black/6.5/Yordlelord.svg",
   Mercenary:
     "https://lolchess.gg/images/tft/traiticons-black/6.5/Mercenary.svg",
   Enforcer: "https://lolchess.gg/images/tft/traiticons-black/6.5/Enforcer.svg",
@@ -23,7 +27,7 @@ const synergy_img_svg: any = {
   Enchanter:
     "https://lolchess.gg/images/tft/traiticons-black/6.5/Enchanter.svg",
   Colossus: "https://lolchess.gg/images/tft/traiticons-black/6.5/Colossus.svg",
-  BodyGuard:
+  Bodyguard:
     "https://lolchess.gg/images/tft/traiticons-black/6.5/Bodyguard.svg",
   Bruiser: "https://lolchess.gg/images/tft/traiticons-black/6.5/Bruiser.svg",
   Challenger:
