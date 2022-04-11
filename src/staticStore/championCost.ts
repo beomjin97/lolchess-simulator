@@ -1,6 +1,9 @@
 // 타입 지정
+interface costType {
+  [x: string]: number;
+}
 
-const championCost: any = {
+const championCost: costType = {
   Galio: 5,
   Gangplank: 3,
   Gnar: 3,

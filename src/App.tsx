@@ -697,12 +697,6 @@ function App() {
             url={championImgUrl.Kaisa}
             synergy={championSynergy.Kaisa}
           />
-          <ChampionBox
-            name="TahmKench"
-            cost={5}
-            url={championImgUrl.TahmKench}
-            synergy={championSynergy.TahmKench}
-          />
         </SynergyBox>
         {/* 변형술사 */}
         <SynergyBox

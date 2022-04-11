@@ -2,7 +2,7 @@ interface sivType {
   [x: string]: string;
 }
 
-const synergy_img_svg: any = {
+const synergy_img_svg: sivType = {
   Rival: "https://lolchess.gg/images/tft/traiticons-black/6.5/Rival.svg",
   Scrap: "https://lolchess.gg/images/tft/traiticons-black/6.5/Scrap.svg",
   Glutton: "https://lolchess.gg/images/tft/traiticons-black/6.5/Glutton.svg",
